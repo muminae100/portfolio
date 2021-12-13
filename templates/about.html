@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block about %}
+
+    <div class="section1">
+        <div class="col1">
+            4 years of successful projects and digital expertise that I can’t wait to share with you.
+        </div>
+        <div class="col2">
+            Over time, I have gotten to enjoy my passion for programming. I have gained a lot of skills and expertise in
+            different technologies.
+            I am focused on code quality, and timely delivery of features. I can work well under team settings, and use
+            different collaborative tools to
+            deliver a project within a shorter time. Additionally, I am open minded and receptive to feedback.
+        </div>
+    </div>
+    <div class="section2 container">
+        <p>COMPLETED PROJECTS</p>
+        <h2>More than 5 fully functional fullstack projects</h2>
+    </div>
+    <div class="section3 container">
+
+        <table class="table">
+            <tr>
+                <th>Project</th>
+                <th>Languages</th>
+                <th>Website link</th>
+                <th>Github repo</th>
+            </tr>
+            <tr>
+                <td>Kevin & Sons general supply company</td>
+                <td>Flask and Javascript</td>
+                <td><a href="kevinsonssupply.co.ke">kevinsonssupply.co.ke</a></td>
+                <td><a href="https://github.com/muminae100/kevin-sons-general-supply-and-services">
+                    kevin-sons-general-supply-and-services</a></td>
+            </tr>
+            <tr>
+                <td>Blog</td>
+                <td>Flask restful and bootstrap</td>
+                <td><a href="#">cymo-blog.heroku.com</a></td>
+                <td><a href="#">blog</a></td>
+            </tr>
+            <tr>
+                <td>Buy Kenya</td>
+                <td>React, Jquery and Flask</td>
+                <td><a href="#">buy-kenya.heroku.com</a></td>
+                <td><a href="#">buy-kenya</a></td>
+            </tr>
+            <tr>
+                <td>Blog</td>
+                <td>Flask restful and bootstrap</td>
+                <td><a href="#">cymo-blog.heroku.com</a></td>
+                <td><a href="#">blog</a></td>
+            </tr>
+            <tr>
+                <td>Kevin & Sons general supply company</td>
+                <td>Flask and Javascript</td>
+                <td><a href="kevinsonssupply.co.ke">kevinsonssupply.co.ke</a></td>
+                <td><a href="https://github.com/muminae100/kevin-sons-general-supply-and-services">
+                    kevin-sons-general-supply-and-services</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4 container">
+        <h2>Contact us</h2>
+        <p class="p1">Have a project of your own?</p>
+        <p class="p2">We've got you covered!</p>
+        <br>
+      <div class="container proj-btn-container">
+        <a href="{{ url_for('portfolio') }}" class="proj-btn">Get in touch</a>
+      </div>
+    </div>
+
+{% endblock about %}
