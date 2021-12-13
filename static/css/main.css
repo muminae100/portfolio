@@ -180,7 +180,7 @@
     }
   }
 
-  /* profile card */
+  /* profile picture container */
   .profile-pic-container{
     display: flex;
     justify-content: center;
@@ -196,6 +196,9 @@
     background-image: url('../img/profile_pic.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    outline: 2px dotted #46b3b5;
+    outline-offset: 3px;
   }
   .kenyan_flag{
     position: absolute;
