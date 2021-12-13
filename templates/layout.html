@@ -92,6 +92,7 @@
           <!-- Overlay content -->
           <div class="overlay-content">
             <div class="left-overlay-links">
+              <a href="{{ url_for('index') }}">Home</a>
               <a href="{{ url_for('about') }}">About</a>
               <a href="{{ url_for('portfolio') }}">Portfolio</a>
               <a href="{{ url_for('contact') }}">Contact</a>
@@ -138,6 +139,7 @@
         <div>
           <div>
             <h4>Quick links</h4>
+            <p><a style="text-decoration: none;" href="{{ url_for('index') }}" class="underline">Home</a></p>
             <p><a style="text-decoration: none;" href="{{ url_for('about') }}" class="underline">About me</a></p>
             <p><a style="text-decoration: none;" href="{{ url_for('portfolio') }}" class="underline">Portfolio</a></p>
             <p><a style="text-decoration: none;" href="{{ url_for('contact') }}" class="underline">Contact</a></p>
