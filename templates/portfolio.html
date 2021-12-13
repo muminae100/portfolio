@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+{% block portfolio %}
+
+    <!-- projects -->
+    <div class="container-fluid projects">
+        <!-- Control buttons -->
+        <div id="myBtnContainer" class="myBtnContainer">
+            <button class="filter-btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="filter-btn" onclick="filterSelection('flask')"> Flask</button>
+            <button class="filter-btn" onclick="filterSelection('django')"> Django</button>
+            <button class="filter-btn" onclick="filterSelection('react')"> React</button>
+
+        <div class="contact-btn-container">
+            <a href="{{ url_for('contact') }}" class="contact-btn">Contact us</a>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="project-container filterDiv flask">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="{{ url_for('static', filename = 'img/kevinsonssupply.png') }}">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-container filterDiv flask">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="https://i.imgur.com/aFFEZ9U.jpg">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-container filterDiv flask">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="https://i.imgur.com/aFFEZ9U.jpg">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="project-container filterDiv django">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="../static/img/kevinsonssupply.png">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-container filterDiv react">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="../static/img/kevinsonssupply.png">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-container filterDiv react">
+                <a style="text-decoration: none;" href="#">
+                    <div class="project">
+                        <div class="content">
+                            <div class="screen">
+                                <img src="../static/img/aFFEZ9U.jpg">
+                            </div>
+
+                        </div>
+                        <div class="project-desc">
+                            <p class="para">Flask</p>
+                            <p class="proj-name">Kevin $ Sons general supply company</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- projects end -->
+
+{% endblock portfolio %}
