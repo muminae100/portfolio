@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/portfolio.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/contact.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename = 'icon/favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename = 'icon/favicon/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename = 'icon/favicon/favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename = 'icon/favicon/site.webmanifest') }}">
+
+
+  <title>Developer Simon</title>
+</head>
+
+<body>
+
+  <!-- preloader -->
+  <div class="spinner-wrapper">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+
+  <!-- start scroll indicator -->
+
+  <div class="scroll-indicator">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+  <!-- end scroll indicator -->
+
+
+  <!-- start scroll to top button -->
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+    data-abc="true"></a>
+  <!-- end scroll to top button -->
+
+  <!-- start body content -->
+  <div class="body-content">
+
+    <div id="nav-menu" class="nav-menu"></div>
+    <div class="container-fluid">
+      <!-- header start -->
+      <div class="nav-container">
+        <span style="font-size: 26px;font-weight: 600;line-height: 26px;">Dev <span
+            style="color: #f44336;">Simon</span></span>
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <div class="left-overlay-links">
+              <a href="{{ url_for('about') }}">About</a>
+              <a href="{{ url_for('portfolio') }}">Portfolio</a>
+              <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+
+          <div style="padding: 8px;">
+             <p class="overlay-titles">Location</p>
+             <p style="color:gray;font-weight: 400;padding: 5px 0;">Nairobi, Kenya</p>
+             <br>
+             <p class="overlay-titles">Socials</p>
+             <a style="font-weight: 400;padding: 5px 0;" href="https://github.com/muminae100">Github</a>
+             <a style="font-weight: 400;padding: 5px 0;" href="github.com/muminae100">Stack Overflow</a>
+             <a style="font-weight: 400;padding: 5px 0;" href="github.com/muminae100">LinkedIn</a>
+             <br>
+             <p class="overlay-titles">Contact me</p>
+             <a style="font-weight: 400;padding: 5px 0;" href="mailto:smuminaetx100@gmail.com">smuminaetx100@gmail.com</a>
+             <a style="font-weight: 400;padding: 5px 0;" href="tel:+254741674737">+254741674737</a>
+          </div>
+        </div>
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="navigation-bars" style="font-size:30px;cursor:pointer;float: right;font-weight: 400;line-height: 27px;"
+        onclick="openNav()">&#9776;</span>
+
+      </div>
+      <!-- header end -->
+
+    <!-- social media icon bar start -->
+
+    <div class="icon-bar">
+      <a href="mailto:smuminaetx100@gmail.com" class="email"><i class="fa fa-envelope"></i></a>
+      <a href="tel:+254741674737" class="phone"><i class="fa fa-phone"></i></a>
+      <a href=" https://wa.me/+254741674737" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <!-- social media icon bar end -->
+
+    {% block body %}
+    {% endblock body %}
+    {% block contact %}
+    {% endblock contact %}
+    {% block portfolio %}
+    {% endblock portfolio %}
+    {% block about %}
+    {% endblock about %}
+    {% block project %}
+    {% endblock project %}
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="footer-row">
+        <div>
+          <div>
+            <h4>Quick links</h4>
+            <p><a style="text-decoration: none;" href="{{ url_for('about') }}" class="underline">About me</a></p>
+            <p><a style="text-decoration: none;" href="{{ url_for('portfolio') }}" class="underline">Portfolio</a></p>
+            <p><a style="text-decoration: none;" href="{{ url_for('contact') }}" class="underline">Contact</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Contact me</h4>
+            <p>smuminaetx100@gmail.com</p>
+            <p>+254741674737</p>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-icons">
+            <h4>Follow me</h4>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-codepen"></i></a>
+            <a href="#"> <i class="fa fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa fa-stack-overflow"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy;<span id="copyright-date"></span>, DevSimon. Made with passion by Dev Simon.</p>
+      </div>
+    </div>
+    <!-- end footer -->
+  </div>
+  <!-- end body content -->
+
+  <!-- scripts -->
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/portfolio.js') }}"></script>
+
+</body>
+
+</html>
