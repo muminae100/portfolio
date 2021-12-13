@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block contact %}
+
+    <div class="cs1 container">
+        <h4>Hire me</h4>
+        <h2>Got a project to discuss? <br> Get in touch.</h2>
+    </div>
+    <div class="container">
+        <div class="section-counter-row">
+          <a href="{{ url_for('index') }}#languages">
+            <div class="section-counter-column">
+              <div class="section-counter-card">
+                <p><i class="fa fa-user"></i></p>
+                <h3>6+</h3>
+                <p>Languages</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="{{ url_for('portfolio') }}">
+            <div class="section-counter-column">
+              <div class="section-counter-card">
+                <p><i class="fa fa-check"></i></p>
+                <h3>5+</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+          </a>
+
+            <div class="section-counter-column">
+              <div class="section-counter-card">
+                <p><i class="fa fa-smile-o"></i></p>
+                <h3>5+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+
+          </div>
+    </div>
+    <div class="cs2 container">
+        <div>
+            <h4>Address</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        </div>
+        <div>
+            <h4>Contact me</h4>
+            <p><a href="mailto:smuminaetx100@gmail.com">smuminaetx100@gmail.com</a></p>
+            <p><a href="tel:+254741674737">+254741674737</a></p>
+        </div>
+        <div class="cs2-icons">
+            <h4>Follow me</h4>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"> <i class="fa fa-stack-overflow"></i></a>
+            <a href="#"><i class="fa fa-linkedin-in"></i></a>
+
+        </div>
+    </div>
+
+{% endblock contact %}
