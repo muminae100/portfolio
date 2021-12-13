@@ -1,0 +1,121 @@
+
+  /* projects */
+  .projects{
+    margin-top: 50px;
+  }
+  .proj-name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+  }
+  .project-desc{
+    padding: 10px 0;
+    max-width: 300px;
+  }
+  .project-desc p:hover{
+    color: #2196F3;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .row > div{
+    margin: 5%;
+  }
+  .content {
+    position: relative;
+  }
+  .screen {
+      display: block;
+      width: 300px;
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 1px;
+  }
+  .screen img {
+      bottom: -200%;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: 0;
+    margin:0;
+    padding:0;
+      -webkit-transition: top 11s;
+      -moz-transition: top 11s;
+      -ms-transition: top 11s;
+      -o-transition: top 11s;
+      transition: bottom 11s;
+  }
+  .screen:hover img {
+    bottom: 0;
+    -webkit-transition: all 11s;
+    -moz-transition: all 11s;
+    -ms-transition: all 11s;
+    -o-transition: all 11s;
+    transition: all 11s;
+  }
+
+  .myBtnContainer{
+    margin-left: 6%;
+  }
+
+  .filterDiv {
+    display: none; /* Hidden by default */
+  }
+
+  .show-filtered-items {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .filter-btn {
+    border: none;
+    outline: none;
+    padding: 16px 32px;
+    margin: 4px 1px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  /* Add a light grey background on mouse-over */
+  .filter-btn:hover {
+    background-color: #ddd;
+  }
+
+  /* Add a dark background to the active button */
+  .filter-btn.active {
+    background-color: #666;
+    color: white;
+  }
+.contact-btn-container{
+    float: right;
+    margin-right: 10%;
+}
+.contact-btn{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #121212;
+    border: 2px solid #121212;
+    border-radius: 3.75rem;
+  }
+  .contact-btn:hover{
+    background-color: white;
+    color: #121212;
+    text-decoration: none;
+  }
+@media screen and (max-width:800px){
+    .contact-btn-container{
+        display: none;
+    }
+}
