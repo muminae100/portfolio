@@ -262,26 +262,24 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+  opacity: 1;
 }
 
 .icon-bar a:hover {
-  background: #2196F3;
+  opacity: 0.8;
   color: #f8f9fa;
 }
 
 .whatsapp{
   background-color: #28a745;
-  color: #6c737a;
 }
 
 .email {
   background: #343a40;
-  color: #6c737a;
 }
 
 .phone {
   background-color: #007bff;
-  color: #f8f9fa;
 }
 
 
