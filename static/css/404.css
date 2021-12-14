@@ -1,47 +1,67 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
- body, html {
-	 margin: 0;
-	 padding: 0;
-	 font-size: 16px;
-	 -webkit-font-smoothing: antialiased;
-	 background-color: #09334f;
-	 position: relative;
+@color-primary: #30a9de;
+@color-secondary: #30a9de;
+@color-tertiary: #30a9de;
+@color-primary-light: #6aafe6;
+@color-primary-dark: #8ec0e4;
+@Distance: 1000px;
+
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
- #yetiSVG {
-	 width: 600px;
-	 height: 470px;
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 overflow: hidden;
+
+.main {
+  justify-content: center;
 }
- #lightSVG {
-	 width: 600px;
-	 height: 470px;
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 overflow: visible;
+
+.MainDescription {
+  max-width: 50%;
+  font-size: 1.2rem;
+  font-weight: lighter;
 }
- .content {
-	 padding: 5rem 3rem 0 25rem;
-	 position: relative;
-	 z-index: 10;
-	 font-family: 'Source Sans Pro', sans-serif;
-	 color: #fff;
+
+.MainGraphic {
+  position: relative;
 }
- .content h3 {
-	 margin: 0 0 0.8rem;
-	 font-size: 2.625rem;
-	 font-weight: 900;
-	 line-height: 120%;
+
+.shuttle {
+  width: 5rem;
+  height: 5rem;
+  margin: 10rem;
+  transition: easeInOutQuint();
+  animation: CogAnimation 30s linear infinite;
 }
- .content p {
-	 font-size: 1.25rem;
-	 font-weight: normal;
-	 line-height: 150%;
-	 color: #d1e2ed;
+
+.astronaut {
+  width: 15rem;
+  height: 15rem;
+  transition: easeInOutQuint();
+  animation: CogAnimation2 25s linear infinite;
 }
- .content p span {
-	 text-decoration: line-through;
+
+.world {
+  width: 10rem;
+  height: 10rem;
+  transition: easeInOutQuint();
+}
+
+@keyframes CogAnimation {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes CogAnimation2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

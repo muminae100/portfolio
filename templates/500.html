@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
+{% block body %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal server error</title>
-    <link rel="stylesheet" href="../static/css/500.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/icon/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/icon/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/icon/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../static/icon/favicon/site.webmanifest">
-</head>
-
-<body>
-
-    <div class="container">
+    <div class="svg-container">
 
         <div class="main">
 
@@ -355,11 +341,9 @@
         <h1 class="MainTitle">
             Houston, we have a problem.
         </h1>
+		<h2>Error 500! Internal server error</h2>
         <h3 class="MainTitle">
             <a style="text-decoration: none;font-family: Inter, sans-serif;" href="{{ url_for('index') }}">Go back to home</a>
         </h3>
     </div>
-
-</body>
-
-</html>
+{% endblock body %}

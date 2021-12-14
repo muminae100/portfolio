@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,abort
 
 app = Flask(__name__)
 
@@ -17,11 +17,6 @@ def about():
 def portfolio():
     return render_template('portfolio.html')
 
-
-@app.route("/project")
-def project():
-    return render_template('single_project.html')
-
 @app.route("/contact")
 def contact():
     return render_template('contact.html')
@@ -32,7 +27,7 @@ def page_not_found(e):
 
 @app.errorhandler(500)
 def internal_error(error):
-    return render_template('505.html')
+    return render_template('500.html'), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -5,27 +5,12 @@
 @color-primary-dark: #8ec0e4;
 @Distance: 1000px;
 
-body {
-  overflow: hidden;
-}
-
-html,
-body {
-  position: relative;
-  background: #d4dfe6;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #274c5e;
-}
-
-.container {
+.svg-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .main {
