@@ -193,8 +193,8 @@
     height: 200px;
     position: relative;
     border-radius: 50%;
-    background-image: url('../img/profile_pic.jpg');
-    background-size: cover;
+    background-image: url('../img/dev_simon.JPG');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     outline: 2px dotted #46b3b5;
@@ -516,26 +516,13 @@ transition: all 11s;
 
 /* sixth project */
 .screen #img6 {
-  bottom: -20%;
+  top: 0;
   width: 100%;
   height: auto;
   position: absolute;
   z-index: 0;
   margin:0;
   padding:0;
-  -webkit-transition: top 11s;
-  -moz-transition: top 11s;
-  -ms-transition: top 11s;
-  -o-transition: top 11s;
-  transition: bottom 11s;
-}
-.screen:hover #img6 {
-bottom: 0;
--webkit-transition: all 11s;
--moz-transition: all 11s;
--ms-transition: all 11s;
--o-transition: all 11s;
-transition: all 11s;
 }
 
   .proj-btn-container{
